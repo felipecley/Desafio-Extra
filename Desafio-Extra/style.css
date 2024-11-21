@@ -1,0 +1,105 @@
+/* Reset básico */
+body, h1, ul, li, form, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+}
+
+main {
+    width: 100%;
+    max-width: 600px;
+    margin: 2rem auto;
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+input {
+    flex: 1;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+}
+
+button {
+    padding: 0.8rem;
+    font-size: 1rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f9f9f9;
+    margin: 0.5rem 0;
+    padding: 0.8rem;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+li button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #333;
+    font-size: 1.2rem;
+}
+
+li button:hover {
+    color: red;
+}
+
+/* Remover a linha riscada no estado de concluído */
+li.completed {
+    color: #888; /* Aplica cor cinza ao texto */
+}
+
+/* Ajuste para que o texto não tenha linha riscada */
+li span {
+    text-decoration: none; 
+}
+
+li span em {
+    font-style: italic;
+    font-size: 0.9rem;
+    color: #555;
+}
